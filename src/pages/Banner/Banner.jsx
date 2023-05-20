@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 import image1 from '../../assets/banner/1.png';
 import image2 from '../../assets/banner/2.png';
 import image3 from '../../assets/banner/3.png';
+import image4 from '../../assets/banner/4-02.png';
 
 const Banner = () => {
-  // Dummy carousel data
   const carouselData = [
     { id: 1, image: image1 },
     { id: 2, image: image2 },
     { id: 3, image: image3 },
+    { id: 4, image: image4 },
   ];
 
   return (
@@ -23,8 +24,8 @@ const Banner = () => {
         </Carousel>
       </div>
       <div className="title-container flex flex-col justify-center items-start p-8">
-        <h1 className="text-8xl font-bold text-info mb-4">Disney Princess Toy Store</h1>
-        <h2 className="text-xl text-gray-500">Explore a magical world of Disney Princess toys</h2>
+        <h1 className="text-8xl font-bold text-info mb-4">Disney Princess Doll Store</h1>
+        <h2 className="text-xl text-gray-500">Explore a magical world of Disney Princess dolls</h2>
         <Link to="/shop" className="btn btn-primary mt-8">
           Shop Now
         </Link>
