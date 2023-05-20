@@ -13,21 +13,18 @@ export default {
     styled: true,
     themes: [
       {
-        disney: {
-          primary: "#FF4081", // Pink
+        mytheme: {
+          primary: "#F596AA", // Aurora Pink
           secondary: "#F8D23B", // Belle Yellow
-          accent: "#1ABC9C", // Tiana Green
-          neutral: "#3D4451", // Dark Gray
-          "base-100": "#FFB2D9", // Light Pink
-          "base-200": "#F39C12", // Bright Orange
-          "base-300": "#4A90E2", // Royal Blue
-          "base-400": "#9B59B6", // Rapunzel Purple
-          "base-500": "#E74C3C", // Mulan Red
-          "base-600": "#217CCF", // Cinderella Blue
+          accent: "#3DD5A3", // Ariel Seafoam Green
+          neutral: "#E43A3F", // Snow White Red
+          "base-100": "#ffff", // white
+          info: "#32B8A4", // Jasmine Teal
+          success: "#9B59B6", // Rapunzel Purple
+          warning: "#E74C3C", // Mulan Red
+          error: "#1ABC9C", // Tiana Green
         },
       },
-      "light",
-      "cupcake",
     ],
     base: true,
     utils: true,
