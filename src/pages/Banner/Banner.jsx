@@ -24,8 +24,8 @@ const Banner = () => {
         </Carousel>
       </div>
       <div className="title-container flex flex-col justify-center items-start p-8">
-        <h1 className="text-8xl font-bold text-info mb-4">Disney Princess Doll Store</h1>
-        <h2 className="text-xl text-gray-500">Explore a magical world of Disney Princess dolls</h2>
+        <h1 className="text-8xl font-bold text-info mb-4">Disney Dolls Store</h1>
+        <h2 className="text-xl text-gray-500">Explore a magical world of Disney dolls</h2>
         <Link to="/shop" className="btn btn-primary mt-8">
           Shop Now
         </Link>

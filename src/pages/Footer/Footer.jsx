@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer p-10 bg-primary text-base-content">
             <div>
                 <img src={logo} alt="" />
-                <p>Fairy Tales Ltd.<br />Providing reliable tech since 2000</p>
+                <p>Copyright: Fairy Tales Ltd.<br />Providing reliable tech since 2000</p>
             </div>
             <div>
                 <span className="footer-title">Services</span>
@@ -16,11 +16,10 @@ const Footer = () => {
                 <a className="link link-hover">Advertisement</a>
             </div>
             <div>
-                <span className="footer-title">Company</span>
-                <a className="link link-hover">About us</a>
-                <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Jobs</a>
-                <a className="link link-hover">Press kit</a>
+                <span className="footer-title">Contact</span>
+                <a className="link link-hover">Mail: fairytales@gmail.com</a>
+                <a className="link link-hover">Phone: 01789093789</a>
+                <a className="link link-hover">Address: Dhaka, Bangladesh</a>
             </div>
             <div>
                 <span className="footer-title">Legal</span>
