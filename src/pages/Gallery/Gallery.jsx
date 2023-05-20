@@ -87,12 +87,12 @@ const Gallery = () => {
                 {galleryData.map((item) => (
                     <div
                         key={item.id}
-                        className="w-64 mx-4 my-4 rounded-lg overflow-hidden shadow-lg transition duration-300 transform hover:scale-105"
+                        className="w-64 mx-4 my-4 rounded-lg overflow-hidden shadow-lg transition duration-300 transform hover:scale-110"
                     >
                         <div className="h-64">
                             <img src={item.imageUrl} alt={item.title} className="w-full h-full object-cover" />
                         </div>
-                        <div className="p-4 bg-purple-500">
+                        <div className="p-4 bg-success">
                             <h3 className="text-lg font-bold text-white">{item.title}</h3>
                         </div>
                     </div>

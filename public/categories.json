@@ -1,0 +1,63 @@
+[
+    {
+        "categoryId": 1,
+        "categoryName": "Disney Princesses",
+        "dolls": [
+          {
+            "id": 1,
+            "name": "Cinderella Doll",
+            "picture": "https://i.ibb.co/7Wsk6YY/cindrella.jpg",
+            "price": 29.99,
+            "rating": 4.5
+          },
+          {
+            "id": 2,
+            "name": "Belle Doll",
+            "picture": "https://i.ibb.co/L1YWRWq/belle.jpg",
+            "price": 34.99,
+            "rating": 4.7
+          }
+        ]
+      },
+      {
+        "categoryId": 2,
+        "categoryName": "Frozen Dolls",
+        "dolls": [
+          {
+            "id": 1,
+            "name": "Elsa Doll",
+            "picture": "https://i.ibb.co/ZX3mTt7/elsa.jpg",
+            "price": 39.99,
+            "rating": 4.8
+          },
+          {
+            "id": 2,
+            "name": "Anna Doll",
+            "picture": "https://i.ibb.co/1Kh0xQ1/frozen.jpg",
+            "price": 37.99,
+            "rating": 4.6
+          }
+        ]
+      },
+      {
+        "categoryId": 3,
+        "categoryName": "Aladdin Dolls",
+        "dolls": [
+          {
+            "id": 1,
+            "name": "Aladdin Doll",
+            "picture": "https://i.ibb.co/w0YZ1zH/aladin.jpg",
+            "price": 26.99,
+            "rating": 4.5
+          },
+          {
+            "id": 2,
+            "name": "Jasmine Doll",
+            "picture": "https://i.ibb.co/pPzgVnr/jesmin.jpg",
+            "price": 29.99,
+            "rating": 4.6
+          }
+        ]
+      }         
+      
+]
