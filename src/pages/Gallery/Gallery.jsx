@@ -81,7 +81,7 @@ const Gallery = () => {
     return (
         <div>
             <div className='mt-24 mb-9'>
-                <h2 className='text-center text-info font-bold text-7xl'>Disney Dolls Gallery</h2>
+                <h2 className='text-center text-info font-bold text-5xl'>Disney Dolls Gallery</h2>
             </div>
             <div className="flex flex-wrap justify-center">
                 {galleryData.map((item) => (
