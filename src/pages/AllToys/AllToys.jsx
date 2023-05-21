@@ -28,7 +28,7 @@ const AllToys = () => {
       toy.ToyName.toLowerCase().includes(value.toLowerCase())
     );
     setFilteredToys(filtered);
-    setShowLimit(20); // Reset showLimit when performing a new search
+    setShowLimit(20); 
   };
 
   const handleViewDetails = (toyId) => {
@@ -76,7 +76,7 @@ const AllToys = () => {
               </td>
               <td className="py-2 px-4 border-b">
                 <button
-                  className="text-blue-500 hover:underline"
+                  className=" btn btn-primary"
                   onClick={() => handleViewDetails(toy._id)}
                 >
                   View Details

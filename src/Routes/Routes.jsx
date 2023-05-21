@@ -9,6 +9,7 @@ import ToyDetails from "../pages/ToyDetails/ToyDetails";
 import MyToys from "../pages/MyToys/MyToys";
 import Blog from "../pages/Blog/Blog";
 import AllToys from "../pages/AllToys/AllToys";
+import PrivateRoute from "./PrivateRoute"
 
 
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
             {
                 path: "alltoys",
                 element: <AllToys></AllToys>
+            },
+            {
+                path: "/toys/:id",
+                element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>
             },
             {
                 path: "mytoys",
