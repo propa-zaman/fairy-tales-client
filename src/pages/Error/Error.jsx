@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import errorImg from "../../assets/error/error.png";
+import useTitle from "../../hook/useTitle";
 
 const Error = () => {
+    useTitle('404')
   return (
     <div className="py-10">
       <div className="text-center">
