@@ -21,7 +21,7 @@ const ShopByCategory = () => {
             toast.error("You have to log in first to view details");
             navigate('/login');
         } else {
-            navigate('/toy-details');
+            navigate('/toydetails');
         }
     };
 
