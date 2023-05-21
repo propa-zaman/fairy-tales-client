@@ -1,0 +1,62 @@
+[
+    {
+        "Seller": "Toy Kingdom",
+        "SellerEmail": "sales@toykingsdom.com",
+        "ToyName": "Disney Princess Doll",
+        "Subcategory": "Princess",
+        "Price": "$19.99",
+        "AvailableQuantity": 10,
+        "Picture": "https://i.ibb.co/7Wsk6YY/cindrella.jpg",
+        "Rating": 4.5,
+        "Description": "This Disney Princess Doll features a beautiful princess wearing a stunning gown. Perfect for imaginative play and storytelling."
+      },
+      {
+        "Seller": "Magic Toy Store",
+        "SellerEmail": "info@magictoystore.com",
+        "ToyName": "Mickey Mouse Plush Doll",
+        "Subcategory": "Plush",
+        "Price": "$14.99",
+        "AvailableQuantity": 5,
+        "Picture": "https://i.ibb.co/Z86qCn5/Untitled-design.jpg",
+        "Rating": 4.8,
+        "Description": "This Mickey Mouse Plush Doll is cuddly and soft, featuring everyone's favorite Disney character. Great for hugs and playtime."
+      },
+      {
+        "Seller": "Enchanting Toys",
+        "SellerEmail": "sales@enchantingtoys.com",
+        "ToyName": "Frozen 2 Elsa Doll",
+        "Subcategory": "Movie Character",
+        "Price": "$24.99",
+        "AvailableQuantity": 8,
+        "Picture": "https://i.ibb.co/ZX3mTt7/elsa.jpg",
+        "Rating": 4.6,
+        "Description": "This Frozen 2 Elsa Doll showcases Elsa's iconic outfit from the movie. Kids can recreate their favorite Frozen moments or invent new adventures."
+      },
+      {
+        "Seller": "Playful World",
+        "SellerEmail": "info@playfulworldtoys.com",
+        "ToyName": "Toy Story Buzz Lightyear Action Figure",
+        "Subcategory": "Action Figure",
+        "Price": "$29.99",
+        "AvailableQuantity": 3,
+        "Picture": "https://i.ibb.co/LNjPS4r/Untitled-design-1.jpg",
+        "Rating": 4.9,
+        "Description": "This Toy Story Buzz Lightyear Action Figure brings the beloved character to life. With articulating limbs and lights, it's perfect for intergalactic adventures."
+      },
+      {
+        "Seller": "Dreamy Dolls",
+        "SellerEmail": "sales@dreamydolls.com",
+        "ToyName": "Disney Descendants Mal Doll",
+        "Subcategory": "TV Character",
+        "Price": "$16.99",
+        "AvailableQuantity": 6,
+        "Picture": "https://i.ibb.co/d2zSjFd/Untitled-design-2.jpg",
+        "Rating": 4.7,
+        "Description": "This Disney Descendants Mal Doll features Mal, the daughter of Maleficent, in her stylish outfit. Kids can imagine epic adventures in the Isle of the Lost."
+      }
+      
+      
+      
+      
+      
+]
