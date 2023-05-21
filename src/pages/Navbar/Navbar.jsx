@@ -18,7 +18,7 @@ const Navbar = () => {
         <>
             {user ? (
                 <>
-                    <li> <Link to="/addtoy">Add A Toy</Link> </li>
+                    <li> <Link to="/addtoy">Add Toy</Link> </li>
                     <li> <Link to="/mytoys">My Toys</Link> </li>
                     {user.photoURL && (
                         <img title={user.displayName}
