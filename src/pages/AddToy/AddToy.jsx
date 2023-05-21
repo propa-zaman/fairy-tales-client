@@ -35,7 +35,7 @@ const AddToy = () => {
 
         console.log(addedToys);
 
-        fetch('http://localhost:5002/alltoys', {
+        fetch('https://fairy-tales-server.vercel.app/allToys', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
