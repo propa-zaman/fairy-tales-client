@@ -4,9 +4,11 @@ import Gallery from '../Gallery/Gallery';
 import ShopByCategory from '../Shop by Category/ShopByCategory';
 import OutNow from '../OutNow/OutNow';
 import Discount from '../Discount/Discount';
+import useTitle from '../../hook/useTitle';
 
 
 const Home = () => {
+    useTitle('Home')
     return (
         <div>
             <Banner></Banner>

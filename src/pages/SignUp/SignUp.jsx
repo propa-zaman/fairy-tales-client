@@ -5,8 +5,11 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../Provider/AuthProvider";
 import img from '../../assets/login/signup-01.png';
+import useTitle from '../../hook/useTitle';
 
 const SignUp = () => {
+    useTitle('Sign Up');
+    
     const { handleCreateUser, user } = useContext(AuthContext);
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");

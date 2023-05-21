@@ -5,9 +5,11 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../Provider/AuthProvider";
 import img from '../../assets/login/login.png';
+import useTitle from "../../hook/useTitle";
 
 
 const Login = () => {
+    useTitle('Login')
     const { user, handleLogin, handleGoogleSignin } = useContext(AuthContext);
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
