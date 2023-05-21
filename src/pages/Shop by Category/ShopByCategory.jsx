@@ -1,15 +1,29 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-hot-toast';
+import { AuthContext } from '../../Provider/AuthProvider';
 
 const ShopByCategory = () => {
     const [categories, setCategories] = useState([]);
+    const { isLoggedIn } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('categories.json')
             .then((res) => res.json())
             .then((data) => setCategories(data));
     }, []);
+
+    const handleViewDetails = () => {
+        if (!isLoggedIn) {
+            toast.error("You have to log in first to view details");
+            navigate('/login');
+        } else {
+            navigate('/toy-details');
+        }
+    };
 
     return (
         <div>
@@ -49,7 +63,7 @@ const ShopByCategory = () => {
                                                 <p>Price: {doll.price}</p>
                                                 <p>Rating: {doll.rating}</p>
                                             </div>
-                                            <button className="bg-primary hover:bg-neutral text-white font-bold py-2 px-4 rounded">
+                                            <button onClick={handleViewDetails} className="bg-primary hover:bg-neutral text-white font-bold py-2 px-4 rounded">
                                                 View Details
                                             </button>
                                         </div>

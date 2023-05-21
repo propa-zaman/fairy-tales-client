@@ -19,6 +19,9 @@ const AuthProvider = ({ children }) => {
 
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  console.log(isLoggedIn);
+
 
   const googleProvider = new GoogleAuthProvider();
 
@@ -29,6 +32,7 @@ const AuthProvider = ({ children }) => {
 
   const handleLogin = (email, password) => {
     setLoading(true);
+    setIsLoggedIn(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
   const handleGoogleSignin = () => {
@@ -37,12 +41,14 @@ const AuthProvider = ({ children }) => {
 
   const handleSignout = () => {
     setLoading(true);
+    setIsLoggedIn(false);
     return signOut(auth);
   };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (loggedUser) => {
       setUser(loggedUser);
+      setIsLoggedIn(!!loggedUser);
       setLoading(false);
     });
     return () => {
@@ -57,6 +63,8 @@ const AuthProvider = ({ children }) => {
     handleLogin,
     handleGoogleSignin,
     handleSignout,
+    isLoggedIn, 
+    setIsLoggedIn
   };
 
   return (
