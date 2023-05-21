@@ -11,7 +11,7 @@ const ShopByCategory = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('categories.json')
+        fetch('https://fairy-tales-server.vercel.app/categories')
             .then((res) => res.json())
             .then((data) => setCategories(data));
     }, []);
