@@ -8,7 +8,7 @@ const MyToys = () => {
     const [addedToys, setAddedToys] = useState([]);
     const navigate = useNavigate();
 
-    const url = `https://fairy-tales-server.vercel.app/allToys?SellerEmail==${user?.email}`;
+    const url = `https://fairy-tales-server.vercel.app/allToys?email=${user?.email}`;
     useEffect(() => {
         fetch(url, {
             method: 'GET', 
@@ -60,14 +60,14 @@ const MyToys = () => {
                     const updated = addedToys.find(addedToy => addedToy._id === id);
                     updated.status = 'confirm'
                     const newAddedToys = [updated, ...remaining];
-                    setAddedToys(ewAddedToys);
+                    setAddedToys(newAddedToys);
                 }
             })
     }
 
     return (
         <div>
-            <h2 className="text-5xl font-bold text-center text-info mb-9">My Toys: {setAddedToys.length}</h2>
+            <h2 className="text-5xl font-bold text-center text-info mb-9">My Toys: {addedToys.length}</h2>
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
                     {/* head */}
@@ -83,6 +83,7 @@ const MyToys = () => {
                             <th>Subcategory</th>
                             <th>Price</th>
                             <th>Rating</th>
+                            <th>Confirm</th>
                         </tr>
                     </thead>
                     <tbody>

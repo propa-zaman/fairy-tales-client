@@ -13,7 +13,7 @@ const MyToysRow = ({ addedToy, handleDelete, handleAddToyConfirm }) => {
             <td>
                 <div className="avatar">
                     <div className="rounded w-24 h-24">
-                        {img && <img src={Picture} alt="Avatar Tailwind CSS Component" />}
+                        {Picture && <img src={Picture} alt="Avatar Tailwind CSS Component" />}
                     </div>
                 </div>
             </td>
